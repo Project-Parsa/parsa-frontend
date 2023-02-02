@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/parsa-frontend/static/css/main.81b33e51.css",
-    "main.js": "/parsa-frontend/static/js/main.4aa00453.js",
-    "static/js/787.2448d3c2.chunk.js": "/parsa-frontend/static/js/787.2448d3c2.chunk.js",
-    "static/media/user-experience.png": "/parsa-frontend/static/media/user-experience.d29a3347f1933206e8fc.png",
-    "static/media/dm-sans-all-400-normal.woff": "/parsa-frontend/static/media/dm-sans-all-400-normal.37e3ab8cb633fce97c87.woff",
-    "static/media/dm-sans-all-500-normal.woff": "/parsa-frontend/static/media/dm-sans-all-500-normal.0a59c6133bb2afd80054.woff",
-    "static/media/dm-sans-all-700-normal.woff": "/parsa-frontend/static/media/dm-sans-all-700-normal.83ca7716c560a37ada07.woff",
-    "static/media/digital-wallet.png": "/parsa-frontend/static/media/digital-wallet.86e5a47c8f5e85d19b19.png",
-    "static/media/dm-sans-latin-500-normal.woff2": "/parsa-frontend/static/media/dm-sans-latin-500-normal.82c42c7339eddd68c79d.woff2",
-    "static/media/dm-sans-latin-700-normal.woff2": "/parsa-frontend/static/media/dm-sans-latin-700-normal.6261bc7f59cc2e5f8f29.woff2",
-    "static/media/dm-sans-latin-400-normal.woff2": "/parsa-frontend/static/media/dm-sans-latin-400-normal.71edbde4a8ed19eeef94.woff2",
-    "static/media/add.png": "/parsa-frontend/static/media/add.c0d196a32607eed0da6a.png",
-    "static/media/dm-sans-latin-ext-400-normal.woff2": "/parsa-frontend/static/media/dm-sans-latin-ext-400-normal.46f8e89145ca0fc60f62.woff2",
-    "static/media/dm-sans-latin-ext-500-normal.woff2": "/parsa-frontend/static/media/dm-sans-latin-ext-500-normal.d0cd2ef294906e1debec.woff2",
-    "static/media/dm-sans-latin-ext-700-normal.woff2": "/parsa-frontend/static/media/dm-sans-latin-ext-700-normal.260b7f4017e3fb22a924.woff2",
-    "index.html": "/parsa-frontend/index.html",
-    "main.81b33e51.css.map": "/parsa-frontend/static/css/main.81b33e51.css.map",
-    "main.4aa00453.js.map": "/parsa-frontend/static/js/main.4aa00453.js.map",
-    "787.2448d3c2.chunk.js.map": "/parsa-frontend/static/js/787.2448d3c2.chunk.js.map"
+    "main.css": "/static/css/main.23406060.css",
+    "main.js": "/static/js/main.8cfa2677.js",
+    "static/js/787.2448d3c2.chunk.js": "/static/js/787.2448d3c2.chunk.js",
+    "static/media/user-experience.png": "/static/media/user-experience.d29a3347f1933206e8fc.png",
+    "static/media/dm-sans-all-400-normal.woff": "/static/media/dm-sans-all-400-normal.37e3ab8cb633fce97c87.woff",
+    "static/media/dm-sans-all-500-normal.woff": "/static/media/dm-sans-all-500-normal.0a59c6133bb2afd80054.woff",
+    "static/media/dm-sans-all-700-normal.woff": "/static/media/dm-sans-all-700-normal.83ca7716c560a37ada07.woff",
+    "static/media/digital-wallet.png": "/static/media/digital-wallet.86e5a47c8f5e85d19b19.png",
+    "static/media/dm-sans-latin-500-normal.woff2": "/static/media/dm-sans-latin-500-normal.82c42c7339eddd68c79d.woff2",
+    "static/media/dm-sans-latin-700-normal.woff2": "/static/media/dm-sans-latin-700-normal.6261bc7f59cc2e5f8f29.woff2",
+    "static/media/dm-sans-latin-400-normal.woff2": "/static/media/dm-sans-latin-400-normal.71edbde4a8ed19eeef94.woff2",
+    "static/media/add.png": "/static/media/add.c0d196a32607eed0da6a.png",
+    "static/media/dm-sans-latin-ext-400-normal.woff2": "/static/media/dm-sans-latin-ext-400-normal.46f8e89145ca0fc60f62.woff2",
+    "static/media/dm-sans-latin-ext-500-normal.woff2": "/static/media/dm-sans-latin-ext-500-normal.d0cd2ef294906e1debec.woff2",
+    "static/media/dm-sans-latin-ext-700-normal.woff2": "/static/media/dm-sans-latin-ext-700-normal.260b7f4017e3fb22a924.woff2",
+    "index.html": "/index.html",
+    "main.23406060.css.map": "/static/css/main.23406060.css.map",
+    "main.8cfa2677.js.map": "/static/js/main.8cfa2677.js.map",
+    "787.2448d3c2.chunk.js.map": "/static/js/787.2448d3c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81b33e51.css",
-    "static/js/main.4aa00453.js"
+    "static/css/main.23406060.css",
+    "static/js/main.8cfa2677.js"
   ]
 }
