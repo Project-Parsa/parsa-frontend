@@ -42,7 +42,8 @@ const ParallaxScroll = (): React.ReactElement => {
 
   const y = useParallax(scrollYProgress, 300);
 
-  const waitlistCode = process.env.REACT_APP_WAITLIST_CODE ?? "";
+  const waitlistCode =
+    process.env.REACT_APP_WAITLIST_CODE ?? "pOSiYkS85c2lv1sgbeUC";
 
   // handler
   const clickPopup = (event: React.MouseEvent) => {
@@ -74,7 +75,7 @@ const ParallaxScroll = (): React.ReactElement => {
         style={{ y }}
         pos="absolute"
         left={{ base: "40px", md: "60px", lg: "140px" }}
-        w={{ base: "300px", md: "400px", lg: "800px"}}
+        w={{ base: "300px", md: "400px", lg: "800px" }}
         right={{
           base: "calc(90% + 10px)",
           md: "calc(70% + 10px)",
@@ -95,7 +96,10 @@ const ParallaxScroll = (): React.ReactElement => {
             acquisition & <br />
             <span style={{ color: "#EB2127" }}>experience.</span>
           </Heading>
-          <Text color="gray.300" fontSize={{ base: "15px", md: "25px", lg: "30px"}}>
+          <Text
+            color="gray.300"
+            fontSize={{ base: "15px", md: "25px", lg: "30px" }}
+          >
             Parsa saves 100s of developer and operational hours for protocols
             allowing them to focus on core product
           </Text>
