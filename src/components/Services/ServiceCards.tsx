@@ -10,9 +10,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { Variants, motion } from "framer-motion";
-import backendToolsIcon from "../assets/add.png";
-import uxToolsIcon from "../assets/user-experience.png";
-import webWalletIcon from "../assets/digital-wallet.png";
+import backendToolsIcon from "../../assets/add.png";
+import uxToolsIcon from "../../assets/user-experience.png";
+import webWalletIcon from "../../assets/digital-wallet.png";
 
 const cardGroupVariants: Variants = {
   offscreen: { opacity: 0 },
@@ -56,12 +56,13 @@ const ServiceCards = (): React.ReactElement => {
       as={motion.div}
       alignItems="center"
       gap={20}
+      zIndex={1}
       w="full"
       templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
     >
       {CARDS.map(({ title, icon, desc }) => (
-        <GridItem w="100%">
-          <Card title={title} icon={icon} key={title} desc={desc} />
+        <GridItem w="100%" key={title}>
+          <Card title={title} icon={icon} desc={desc} />
         </GridItem>
       ))}
     </Grid>

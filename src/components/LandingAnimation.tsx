@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Center, Container, Heading, VStack } from "@chakra-ui/react";
 import { motion, useInView, Variants } from "framer-motion";
-import ServiceCards from "./ServiceCards";
+import ServiceCards from "./Services/ServiceCards";
 
 const variants: Variants = {
   offscreen: {
@@ -12,7 +12,7 @@ const variants: Variants = {
     y: 100,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.5,
       when: "beforeChildren",
     },
   },
@@ -48,7 +48,7 @@ const LandingAnimation = React.forwardRef<
 >(({ handleAnimationCompleted }, ref) => {
   const [showComingSoon, setShowComingSoon] = React.useState(false);
   const comingSoonRef = React.useRef(null);
-  const inView = useInView(comingSoonRef, { amount: "all" });
+  const inView = useInView(comingSoonRef, { amount: 0.3 });
 
   React.useEffect(() => {
     if (!inView) setShowComingSoon(false);
@@ -59,14 +59,12 @@ const LandingAnimation = React.forwardRef<
       as={motion.div}
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: false, amount: 0.9 }}
+      viewport={{ once: false, amount: 0.4 }}
       variants={bgVariants}
       minH="100vh"
       w="full"
       px="20px"
       pb="100px"
-      zIndex={2}
-      ref={ref}
       onAnimationComplete={(a: unknown) => {
         if (a === "onscreen") {
           setShowComingSoon(true);
@@ -85,8 +83,10 @@ const LandingAnimation = React.forwardRef<
           variants={variants}
           viewport={{ once: false, amount: "some" }}
           px="40px"
+          h="100px"
           w={{ base: "90%", lg: "70%" }}
           textAlign="start"
+          ref={ref}
         >
           <Heading
             fontSize={{ base: "20px", md: "35px", lg: "55px" }}
@@ -125,7 +125,7 @@ const LandingAnimation = React.forwardRef<
                   transition: { duration: 1.4 },
                 }}
               >
-                <Heading>More coming soon!</Heading>
+                <Heading fontSize={{ base: "18px", lg: "40px"}}>More coming soon!</Heading>
               </Box>
             </Center>
           </VStack>

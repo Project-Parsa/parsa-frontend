@@ -234,7 +234,7 @@ export const LOGO_PARTICLES_OPTIONS: ISourceOptions = {
   detectRetina: true,
   fullScreen: false,
   interactivity: {
-    detectsOn: "canvas",
+    detectsOn: "parent",
     events: {
       onClick: {
         enable: false,
@@ -344,7 +344,7 @@ export const LOGO_PARTICLES_OPTIONS: ISourceOptions = {
       radius: 15,
     },
     position: {
-      x: 15,
+      x: 0,
       y: 0,
     },
     inline: {
