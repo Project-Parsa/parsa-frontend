@@ -7,20 +7,28 @@ import { loadFull } from "tsparticles";
 import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 
 interface ParticlesAnimationProps {
-    id: string;
-    options: ISourceOptions;
-    w?: string;
-    h?: string;
-    style?: React.CSSProperties
+  id: string;
+  options: ISourceOptions;
+  w?: string;
+  h?: string;
+  style?: React.CSSProperties;
+  polygonMask?: boolean;
 }
 
-const ParticlesAnimation = ({id, options, w, h, style}: ParticlesAnimationProps): React.ReactElement => {
+const ParticlesAnimation = ({
+  id,
+  options,
+  w,
+  h,
+  style,
+  polygonMask = false,
+}: ParticlesAnimationProps): React.ReactElement => {
   const particlesInit = React.useCallback(async (engine: Engine) => {
     // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
-    await loadPolygonMaskPlugin(engine);
+    if (polygonMask) await loadPolygonMaskPlugin(engine);
   }, []);
 
   const particlesLoaded = React.useCallback(

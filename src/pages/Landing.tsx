@@ -3,46 +3,63 @@ import { Box } from "@chakra-ui/react";
 import Header from "../components/Header";
 import ParticlesAnimation from "../components/ParticlesAnimation";
 import { BG_PARTICLES_OPTIONS } from "../constants";
-import { motion, useInView, Variants } from "framer-motion";
 import Scroll from "react-scroll";
 import Landing from "../components/Landing";
 import Services from "../components/Services";
+import { motion, useInView, Variants } from "framer-motion";
+import Partners from "../components/Partners";
+import CWW from "../components/CWW";
 
-const bgVariants: Variants = {
+const variants: Variants = {
   dark: {
-    background: "#1a202c",
+    backgroundColor: "#1A202C",
+    transition: { duration: 0.3 },
   },
   darker: {
-    background: "#0b090a",
-    transition: { duration: 0.8, when: "afterChildren" },
+    backgroundColor: "#000",
+    transition: { duration: 0.5, delay: 0.1 },
   },
 };
 
 const LandingPage = (): React.ReactElement => {
   const ref = React.useRef(null);
-  const inView = useInView(ref, { amount: "some" });
+  const scrollRef = React.useRef(null);
   const Element = Scroll.Element;
+
+  const inView = useInView(scrollRef, { amount: 0.4 });
 
   return (
     <Box
       as={motion.div}
-      minH="100vh"
-      variants={bgVariants}
+      variants={variants}
       initial="dark"
       animate={inView ? "darker" : "dark"}
+      minH="100vh"
+      bgColor="#1A202C"
+      overflow="hidden"
     >
-      <ParticlesAnimation
-        id="tsparticles-bg"
-        options={BG_PARTICLES_OPTIONS}
-        style={{ position: "fixed", zIndex: 0 }}
-      />
+      {!inView && (
+        <ParticlesAnimation
+          id="tsparticles-bg"
+          options={BG_PARTICLES_OPTIONS}
+          style={{ position: "fixed", zIndex: 0 }}
+        />
+      )}
       <Header />
-      <Box minH="100vh" >
+      <Box h="90vh">
         <Landing />
       </Box>
       <Element name="anchor" ref={ref}>
         <Services />
       </Element>
+      <Box ref={scrollRef}>
+        <Box pt="50px">
+          <CWW />
+        </Box>
+        <Box pt="150px" minH="80vh">
+          <Partners />
+        </Box>
+      </Box>
     </Box>
   );
 };

@@ -14,34 +14,49 @@ const WelcomeCta = (): React.ReactElement => {
       // Pass your waitlist ID
       waitlist.openPopup(waitlistCode);
     },
-    [waitlist, waitlistCode]
+    [waitlistCode]
   );
   return (
-    <VStack spacing="35px" alignItems="self-start" w="full"> 
-      <Heading
-        fontSize={{ base: "20px", md: "25px", lg: "40px", xl: "70px" }}
-        lineHeight={{ base: "25px", md: "35px", lg: "55px", xl: "100px" }}
-      >
-        <span style={{ color: "#EB2127" }}>supercharge</span> web3 customer
-        acquisition & <br />
-        <span style={{ color: "#EB2127" }}>experience.</span>
+    <VStack
+      spacing="35px"
+      alignItems="center"
+      textAlign="center"
+      w="full"
+      zIndex={2}
+    >
+      <Heading fontSize={{ base: "35px", lg: "60px", xl: "75px" }}>
+        parsa
+        <Text
+          as="span"
+          bgGradient="linear(to-l, #EB2127, #fca311)"
+          bgClip="text"
+        >
+          labs
+        </Text>
       </Heading>
-      <Text
-        color="gray.300"
-        fontSize={{ base: "15px", md: "25px", lg: "30px" }}
-      >
-        Parsa saves 100s of developer and operational hours for protocols
-        allowing them to focus on core product
-      </Text>
-      <Button
-        onClick={clickPopup}
-        mt="30px"
-        variant="solid"
-        bg="#EB2127"
-        size="lg"
-      >
-        Join the Waitlist
-      </Button>
+      <Heading fontSize={{ base: "22px", lg: "28px", xl: "40px" }}>
+        <span style={{ color: "#EB2127" }}>supercharge</span> web3 customer
+        acquisition &<span style={{ color: "#EB2127" }}> experience.</span>
+      </Heading>
+      <VStack spacing="25px" maxW="450px">
+        <Text
+          color="gray.300"
+          fontSize={{ base: "16px", lg: "20px", xl: "25px" }}
+          textAlign="justify"
+        >
+          Parsa saves 100s of developer and operational hours for protocols
+          allowing them to focus on their core product.
+        </Text>
+        <Button
+          onClick={clickPopup}
+          variant="solid"
+          bgGradient="linear(to-l, #7928CA, #EB2127)"
+          size="lg"
+          w="full"
+        >
+          Join the Waitlist
+        </Button>
+      </VStack>
     </VStack>
   );
 };

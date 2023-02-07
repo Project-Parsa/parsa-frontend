@@ -301,7 +301,7 @@ export const LOGO_PARTICLES_OPTIONS: ISourceOptions = {
       blink: false,
       color: "random",
       consent: false,
-      distance: 50,
+      distance: 40,
       enable: true,
       opacity: 0.4,
       width: 2,
@@ -313,12 +313,12 @@ export const LOGO_PARTICLES_OPTIONS: ISourceOptions = {
     },
     number: {
       limit: 0,
-      value: 400,
+      value: 150,
     },
     opacity: {
       animation: {
         enable: true,
-        speed: 2,
+        speed: 3,
         sync: false,
       },
       value: {
@@ -344,13 +344,13 @@ export const LOGO_PARTICLES_OPTIONS: ISourceOptions = {
       radius: 15,
     },
     position: {
-      x: 0,
-      y: 0,
+      x: 38,
+      y: 22,
     },
     inline: {
       arrangement: "equidistant",
     },
-    scale: 13,
+    scale: 5,
     type: "inline",
     url: "https://upload.wikimedia.org/wikipedia/commons/2/21/Eo_circle_pink_letter-p.svg",
   },

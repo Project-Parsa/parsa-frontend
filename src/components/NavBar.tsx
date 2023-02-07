@@ -5,16 +5,13 @@ import { Link, useLocation } from "react-router-dom";
 import { NAV_ITEMS, PageRoute } from "../constants";
 import Scroll from "react-scroll";
 
-interface NavBarProps {
-  activeTab: PageRoute;
-}
-
 const NavBar = (): React.ReactElement => {
   const scroller = Scroll.scroller;
   const onClickHandler = React.useCallback(() => {
     scroller.scrollTo("anchor", {
       duration: 1000,
       delay: 100,
+      offset: -150,
       smooth: "easeInOutQuint",
     });
   }, [scroller]);
