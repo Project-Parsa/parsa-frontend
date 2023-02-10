@@ -28,6 +28,7 @@ const Landing = (): React.ReactElement => {
       animate="show"
       pt="220px"
       maxW="900px"
+      zIndex={2}
     >
       <WelcomeCta />
     </Container>

@@ -1,7 +1,7 @@
 // font
-import "@fontsource/dm-sans/700.css";
-import "@fontsource/dm-sans/500.css";
-import "@fontsource/dm-sans/400.css";
+import "@fontsource/epilogue/700.css";
+import "@fontsource/epilogue/500.css";
+import "@fontsource/epilogue/400.css";
 
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import * as React from "react";

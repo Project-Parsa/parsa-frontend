@@ -26,7 +26,7 @@ const LandingPage = (): React.ReactElement => {
   const scrollRef = React.useRef(null);
   const Element = Scroll.Element;
 
-  const inView = useInView(scrollRef, { amount: 0.4 });
+  const inView = useInView(scrollRef, { amount: "some" });
 
   return (
     <Box

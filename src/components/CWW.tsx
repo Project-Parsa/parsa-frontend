@@ -220,6 +220,7 @@ const CWW = (): ReactElement => {
           border="2px solid"
           borderColor="#7928CA"
           boxShadow="0px 0px 20px 5px #7928CA"
+          zIndex={2}
         >
           <VStack spacing="40px" alignItems="center">
             <VStack w="full" spacing={4}>

@@ -1,5 +1,12 @@
 import type { ISourceOptions } from "tsparticles-engine";
 
+export const EMAILJS_SERVICE_CODE =
+  process.env.REACT_APP_EMAILJS_SERVICE_CODE ?? "";
+export const EMAILJS_TEMPLATE_CODE =
+  process.env.REACT_APP_EMAILJS_TEMPLATE_CODE ?? "";
+export const EMAILJS_PUBLIC_KEY =
+  process.env.REACT_APP_EMAILJS_PUBLIC_KEY ?? "";
+
 export enum PageRoute {
   DEFAULT = "/",
   SERVICES = "/services",

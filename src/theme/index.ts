@@ -6,9 +6,9 @@ const config: ThemeConfig = {
 };
 
 const fonts = {
-  heading: `"DM Sans", "sans-serif"`,
-  body: `"DM Sans", "sans-serif"`,
-  mono: `"DM Sans", "sans-serif"`,
+  heading: `"Epilogue", serif`,
+  body: `"Epilogue", serif`,
+  mono: `"Epilogue", serif`,
 };
 
 export default extendTheme({ config, fonts });
