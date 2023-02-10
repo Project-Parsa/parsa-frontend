@@ -104,7 +104,7 @@ const LandingV2 = (): React.ReactElement => {
           setEmail("");
         });
     }
-  }, [email, emailError]);
+  }, [email, emailError, toast]);
 
   return (
     <Box

@@ -11,7 +11,6 @@ import { App } from "./App";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorker from "./serviceWorker";
 import theme from "./theme";
-import ScrollToTop from "./components/ScrollToTop";
 
 const container = document.getElementById("root");
 if (!container) throw new Error("Failed to find the root element");
@@ -22,7 +21,6 @@ root.render(
     <ColorModeScript />
     <ChakraProvider theme={theme}>
       <HashRouter>
-        <ScrollToTop />
         <App />
       </HashRouter>
     </ChakraProvider>
