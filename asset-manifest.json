@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e330b763.css",
-    "main.js": "/static/js/main.85cd6d7b.js",
+    "main.css": "/static/css/main.708a71d8.css",
+    "main.js": "/static/js/main.11fdd8a2.js",
     "static/js/787.2448d3c2.chunk.js": "/static/js/787.2448d3c2.chunk.js",
-    "static/media/phone.png": "/static/media/phone.afeb064d805157aaa39f.png",
+    "static/media/bg.png": "/static/media/bg.9a5703c114bec6efe39b.png",
+    "static/media/azuki.png": "/static/media/azuki.f49aa54d17d9249f56f5.png",
+    "static/media/bayc.png": "/static/media/bayc.465888bd5e92595e7b2d.png",
     "static/media/epilogue-all-700-normal.woff": "/static/media/epilogue-all-700-normal.f7b85214a17bd4ab2f55.woff",
     "static/media/epilogue-all-500-normal.woff": "/static/media/epilogue-all-500-normal.7bcd958e919eccedcd75.woff",
     "static/media/epilogue-all-400-normal.woff": "/static/media/epilogue-all-400-normal.06abd601976bba25d509.woff",
     "static/media/epilogue-latin-700-normal.woff2": "/static/media/epilogue-latin-700-normal.e66d43ef6bf54a7ca21a.woff2",
     "static/media/epilogue-latin-500-normal.woff2": "/static/media/epilogue-latin-500-normal.8d84025da18d18d30ded.woff2",
     "static/media/epilogue-latin-400-normal.woff2": "/static/media/epilogue-latin-400-normal.c8eef8d6ce20f1969ba9.woff2",
+    "static/media/dickbutts.png": "/static/media/dickbutts.14fceb727a229002ee65.png",
     "static/media/epilogue-latin-ext-700-normal.woff2": "/static/media/epilogue-latin-ext-700-normal.f75f6d4bd05237e644c7.woff2",
     "static/media/epilogue-latin-ext-500-normal.woff2": "/static/media/epilogue-latin-ext-500-normal.3d945f5350b49ad859d4.woff2",
     "static/media/epilogue-latin-ext-400-normal.woff2": "/static/media/epilogue-latin-ext-400-normal.33fa8a1fb57be4325233.woff2",
@@ -17,12 +20,12 @@
     "static/media/epilogue-vietnamese-500-normal.woff2": "/static/media/epilogue-vietnamese-500-normal.28d028aedd884f15057a.woff2",
     "static/media/epilogue-vietnamese-400-normal.woff2": "/static/media/epilogue-vietnamese-400-normal.9684687c1b791c07434b.woff2",
     "index.html": "/index.html",
-    "main.e330b763.css.map": "/static/css/main.e330b763.css.map",
-    "main.85cd6d7b.js.map": "/static/js/main.85cd6d7b.js.map",
+    "main.708a71d8.css.map": "/static/css/main.708a71d8.css.map",
+    "main.11fdd8a2.js.map": "/static/js/main.11fdd8a2.js.map",
     "787.2448d3c2.chunk.js.map": "/static/js/787.2448d3c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e330b763.css",
-    "static/js/main.85cd6d7b.js"
+    "static/css/main.708a71d8.css",
+    "static/js/main.11fdd8a2.js"
   ]
 }
